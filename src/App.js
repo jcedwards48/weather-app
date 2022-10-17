@@ -1,4 +1,4 @@
-import React from "react";
+import React, { startTransition } from "react";
 import "./App.css";
 
 export default function App() {
@@ -20,3 +20,4 @@ export default function App() {
     </div>
   );
 }
+npm startTransition
