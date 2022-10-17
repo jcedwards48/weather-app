@@ -1,12 +1,12 @@
 import React, { startTransition } from "react";
+import Weather from "./Weather";
 import "./App.css";
 
 export default function App() {
   return (
     <div className="App">
       <div classname="container">
-            <header className="App-header">
-        <h1>React Weather App</h1>
+        <Weather />
         <footer>
           This project was coded by Jeanne C. Edwards and is open-sourced on{" "}
           <a
@@ -17,7 +17,7 @@ export default function App() {
             Github
           </a>
         </footer>
-      </header>
+      
      </div>
     </div>
   );
