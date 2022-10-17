@@ -1,7 +1,6 @@
 import React from "react";
-import "./"Weather.css";
+import "./Weather.css";
 
 export default function Weather() {
-  return;
-  <div classname="Weather">Hello from Weather</div>;
+  return <div classname="Weather">Hello from Weather</div>;
 }
