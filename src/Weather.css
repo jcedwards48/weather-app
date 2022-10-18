@@ -1,3 +1,4 @@
-App {
+.Weather {
   background-color: rgba(10, 120, 215, 0.07);
+  border: 1px solid rgb(68, 17, 17)
 }

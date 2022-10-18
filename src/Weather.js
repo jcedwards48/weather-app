@@ -3,11 +3,45 @@ import "./Weather.css";
 
 export default function Weather() {
   return (
-  <div classname="Weather">Blythewood</div>;
-<ul>
-  <li> 15 October 2022  10:00 </li>
-  <li> Sunny </li>
-</ul>
+    <div className="Weather">
+      <form>
+        <div className="col-9>
+          <input
+            type="search"
+            placeholder="Enter city name"
+            className="form-control"
+          />
+        
+           <input
+             type="submit"
+             value="Search"
+             className"btn btn-primary"
+           />
+        </div>
+      </form>
+
+    <h1>Blythewood</h1>
+    <ul>
+      <li> Tuesday 10:00 </li>
+      <li> Sunny </li>
+    </ul>
+
+    <div className="row">
+      <div className="col-6">
+        <img src="https://assets.msn.com/weathermapdata/1/static/svg/72/v2/card_fix_partlysunny/SunnyDayV3.svg"
+             alt="sunny image" 
+      />
+      6°
+      </div>
+   
+    <div classNname="col-6">
+      <ul>
+        <li>Precipitation 15%</li>
+        <li>Wind 5 kmh</li>
+        <li>Humidity 90%</li>
+      </ul>
+    </div>
+   </div>
 
   );
 }
