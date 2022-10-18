@@ -5,7 +5,7 @@ export default function Weather() {
   return (
     <div className="Weather">
       <form>
-        <div className="col-9>
+        <div className="col-9">
           <input
             type="search"
             placeholder="Enter city name"
@@ -34,7 +34,7 @@ export default function Weather() {
       6°
       </div>
    
-    <div classNname="col-6">
+    <div className="col-6">
       <ul>
         <li>Precipitation 15%</li>
         <li>Wind 5 kmh</li>
