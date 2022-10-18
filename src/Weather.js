@@ -20,15 +20,15 @@ export default function Weather() {
         </div>
       </form>
 
-    <h1>Blythewood</h1>
-    <ul>
-      <li> Tuesday 10:00 </li>
-      <li> Sunny </li>
-    </ul>
+      <h1>Blythewood</h1>
+        <ul>
+          <li> Tuesday 10:00 </li>
+          <li> Sunny </li>
+        </ul>
 
     <div className="row">
       <div className="col-6">
-        <img src="https://assets.msn.com/weathermapdata/1/static/svg/72/v2/card_fix_partlysunny/SunnyDayV3.svg"
+        <img src=https://ssl.gstatic.com/onebox/weather/64/sunny.png
              alt="sunny image" 
       />
       6°
