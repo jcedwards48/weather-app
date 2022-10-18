@@ -1,7 +1,11 @@
 import React from "react";
 import "./Weather.css";
+import axios from "axios";
 
 export default function Weather() {
+  let apiKey = "https://ssl.gstatic.com/onebox/weather/64/sunny.png";
+  let city = "London";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
   return (
     <div className="Weather">
       <form>
