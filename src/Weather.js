@@ -28,7 +28,7 @@ export default function Weather() {
 
     <div className="row">
       <div className="col-6">
-        <img src=https://ssl.gstatic.com/onebox/weather/64/sunny.png
+        <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
              alt="sunny image" 
       />
       6°
