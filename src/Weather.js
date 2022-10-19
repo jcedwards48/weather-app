@@ -49,6 +49,7 @@ export default function Weather() {
           </div>
         </div>
       </div>
+     </div>
 
       <div className="col-6">
         <ul>
@@ -57,8 +58,9 @@ export default function Weather() {
           <li>Humidity 90%</li>
         </ul>
       </div>
-     </div>
-    </div>
+
+   </div>
+  
 
    );
   } else {
