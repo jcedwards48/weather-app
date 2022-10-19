@@ -1,15 +1,23 @@
-import React from "react";
-import "./Weather.css";
+import React, { useState} from "react";
 import axios from "axios";
+import "./Weather.css";
 
 export default function Weather() {
-  let apiKey = "8799882eec11a6cae9364a17c61e256e";
-  let city = "London";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
-  return (
-    <div className="Weather">
+  const [ready, setReady] = useState(false);
+  const [temperature, setTemperature] = useState(null);
+  function handleResponse(response) {
+    console.log(response.data);
+    setTemperature(response.data.main.temp);
+    setReady(true);
+  
+  }
+
+  if (ready) {}
+    return (
+      <div className="Weather">
       <form>
-        <div className="col-9">
+        <div className="row">
+          <div className="col-9">
           <input
             type="search"
             placeholder="Enter city name"
@@ -21,18 +29,23 @@ export default function Weather() {
       </form>
 
       <h1>Blythewood</h1>
-      <ul>
+       <ul>
         <li> Tuesday 10:00 </li>
         <li> Sunny </li>
       </ul>
 
       <div className="row">
         <div className="col-6">
+          <div className="clearfix">
           <img
             src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
             alt="sunny image"
+            className="float-left"
           />
-          6°
+          <div className="float-left">
+            <span className="temperature">{temperature</span>
+            <span className="unit>°C"</span>
+          </div>
         </div>
       </div>
 
@@ -43,6 +56,17 @@ export default function Weather() {
           <li>Humidity 90%</li>
         </ul>
       </div>
+     </div>
     </div>
-  );
-}
+
+   );
+  } else {
+
+  const apiKey = "8799882eec11a6cae9364a17c61e256e";
+  let city = "New York";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(handleResponse);
+
+  return "Loading...";
+ }
+}   
