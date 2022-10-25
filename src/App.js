@@ -6,7 +6,7 @@ export default function App() {
   return (
     <div className="App">
       <div classname="container">
-        <Weather />
+        <Weather defaultCity="New York" />
         <footer>
           This project was coded by Jeanne C. Edwards and is open-sourced on{" "}
           <a
@@ -17,8 +17,7 @@ export default function App() {
             Github
           </a>
         </footer>
-      
-     </div>
+      </div>
     </div>
   );
 }
