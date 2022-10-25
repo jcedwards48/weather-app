@@ -11,8 +11,7 @@ export default function Weather(props) {
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       date: "Sunday 10:36",
-      description: response.data.weather[0],
-      description,
+      description: response.data.weather[0].description,
       iconUrl:
         "https://static.vecteezy.com/system/resources/previews/000/428/958/original/weather-icon-set-vector.jpg",
       wind: response.data.wind.speed,
