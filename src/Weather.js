@@ -13,7 +13,7 @@ export default function Weather(props) {
       date: "Sunday 10:36",
       description: response.data.weather[0].description,
       iconUrl:
-        "https://thumbs.dreamstime.com/b/sun-icon-set-silhouette-format-50989256.jpg",
+        "https://img.freepik.com/free-vector/hand-painted-sun_23-2147510442.jpg?w=740&t=st=1666720384~exp=1666720984~hmac=7800198804ef814196e36a0c41679ebe414cb1e15e4ac9ff96fad8f780115918",
       wind: response.data.wind.speed,
       city: response.data.name,
     });
