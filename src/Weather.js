@@ -13,7 +13,7 @@ export default function Weather(props) {
       date: "Sunday 10:36",
       description: response.data.weather[0].description,
       iconUrl:
-        "https://static.vecteezy.com/system/resources/previews/000/428/958/original/weather-icon-set-vector.jpg",
+        "https://thumbs.dreamstime.com/b/sun-icon-set-silhouette-format-50989256.jpg",
       wind: response.data.wind.speed,
       city: response.data.name,
     });
