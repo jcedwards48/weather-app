@@ -6,8 +6,8 @@ export default function weatherInfo(props) {
     <div className="WeatherInfo">
       <h1>{props.data.city}</h1>
       <ul>
-        <li>currentDate date={weatherData.date} /></li>
-        <li className="text-capitalize">{weatherData.description}</li>
+        <li>currentDate date={props.data.date} /></li>
+        <li className="text-capitalize">{props.data.description}</li>
       </ul>
 
       <div className="row mt-3">
@@ -20,7 +20,7 @@ export default function weatherInfo(props) {
             />
             <div className="float-left">
               <span className="temperature">
-                {Math.round(weatherData.temperature)}
+                {Math.round(props.data.temperature)}
               </span>
               <span className="unit">°C</span>
             </div>
@@ -29,8 +29,8 @@ export default function weatherInfo(props) {
 
         <div className="col-6">
           <ul>
-            <li>Wind: {weatherData.wind} kmh</li>
-            <li>Humidity: {weatherData.humidity}%</li>
+            <li>Wind: {props.data.wind} kmh</li>
+            <li>Humidity: {props.data.humidity}%</li>
           </ul>
         </div>
       </div>
