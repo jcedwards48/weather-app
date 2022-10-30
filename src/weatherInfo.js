@@ -6,8 +6,10 @@ export default function weatherInfo(props) {
     <div className="WeatherInfo">
       <h1>{props.data.city}</h1>
       <ul>
-        <li>CurrentDate date={props.data.date} /></li>
         <li className="text-capitalize">{props.data.description}</li>
+        <li>
+          <CurrentDate date={props.data.date} />
+        </li>
       </ul>
 
       <div className="row mt-3">
