@@ -35,7 +35,6 @@ export default function WeatherForecast(props) {
               return (
                 <div className="col" key={index}>
                   <WeatherForecastDay data={dailyForecast} />
-                  <WeatherIcon code="01d" size={36} />
                 </div>
               );
             } else {
