@@ -34,7 +34,7 @@ export default function WeatherForecast(props) {
             if (index < 5) {
               return (
                 <div className="col" key={index}>
-                  <WeatherForecastDay data={forecast[0].dt} />
+                  <WeatherForecastDay data={dailyForecast} />
                   <WeatherIcon code="01d" size={36} />
                 </div>
               );
